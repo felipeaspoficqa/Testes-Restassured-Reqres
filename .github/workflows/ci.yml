@@ -22,4 +22,4 @@ jobs:
 
 
       - name: Rodar testes com Maven
-        run: mvn clean test
+        run: mvn clean test -Dsurefire.printSummary=true -Dsurefire.useFile=false
