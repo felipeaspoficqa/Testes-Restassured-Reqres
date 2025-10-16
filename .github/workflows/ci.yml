@@ -17,7 +17,9 @@ jobs:
       - name: Configurar Java
         uses: actions/setup-java@v4
         with:
+          distribution: 'temurin'
           java-version: '21'
+
 
       - name: Rodar testes com Maven
         run: mvn clean test
